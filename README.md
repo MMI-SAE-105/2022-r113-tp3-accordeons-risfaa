@@ -1,3 +1,3 @@
-- nom :
-- prénom :
-- URL publique du site :
+- nom : HALEPOVIC
+- prénom : Faris
+- URL publique du site : https://tp-accordeons-faris-halepovic.netlify.app/
