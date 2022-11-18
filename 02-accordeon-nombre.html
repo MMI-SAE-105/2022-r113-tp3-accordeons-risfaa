@@ -9,18 +9,18 @@
   </head>
   <body>
     <h1>Accordéon avec des booléens</h1>
-    <div class="accordeon">
-      <section x-data="{bouton1:false}">
-        <button @click="bouton1 = 1">bouton 1</button>
-        <p x-show="bouton1 === 1 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid earum doloribus expedita architecto eum odit quibusdam officiis soluta, maxime, fuga quia voluptatibus illo eos. Optio quae harum accusantium consequatur nesciunt!</p>
+    <div class="accordeon" x-data="{bouton:false}">
+      <section>
+        <button @click="bouton = 1">bouton 1</button>
+        <p x-show="bouton === 1 " x-transition.scale.origin.top>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid earum doloribus expedita architecto eum odit quibusdam officiis soluta, maxime, fuga quia voluptatibus illo eos. Optio quae harum accusantium consequatur nesciunt!</p>
       </section>
-      <section x-data="{bouton2:false}">
-        <button @click="bouton2 = 2">bouton 2</button>
-        <p x-show="bouton2 === 2 ">Placeat corporis quis rem mollitia quae id iusto deserunt repellendus! Nobis autem dignissimos omnis suscipit alias illum porro, natus ipsam labore dolorem, eos, beatae impedit harum nemo ipsum! Repellendus, at?</p>
+      <section>
+        <button @click="bouton = 2">bouton 2</button>
+        <p x-show="bouton === 2 " x-transition.scale.origin.top>Placeat corporis quis rem mollitia quae id iusto deserunt repellendus! Nobis autem dignissimos omnis suscipit alias illum porro, natus ipsam labore dolorem, eos, beatae impedit harum nemo ipsum! Repellendus, at?</p>
       </section>
-      <section x-data="{bouton3:false}">
-        <button @click="bouton3 = 3">bouton 3</button>
-        <p x-show="bouton3 ===3 ">Consequatur totam iure assumenda laboriosam illo laborum quasi recusandae mollitia aliquid excepturi reprehenderit quia possimus in error, hic reiciendis ab id consectetur maxime. Iusto sunt, amet velit nostrum consequatur mollitia.</p>
+      <section>
+        <button @click="bouton = 3">bouton 3</button>
+        <p x-show="bouton === 3 " x-transition.scale.origin.top> Consequatur totam iure assumenda laboriosam illo laborum quasi recusandae mollitia aliquid excepturi reprehenderit quia possimus in error, hic reiciendis ab id consectetur maxime. Iusto sunt, amet velit nostrum consequatur mollitia.</p>
       </section>
     </div>
   </body>
