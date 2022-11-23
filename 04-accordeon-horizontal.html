@@ -4,9 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accordéon horizontal</title>
+    <title>Accordéon avec des booléens</title>
+    <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
   <body>
-    <h1>Accordéon horizontal</h1>
+    <h1>Accordéon avec des booléens</h1>
+    <div class="accordeon" x-data="{bouton:false}">
+      <section>
+        <button @click="bouton = 1">bouton 1</button>
+        <p x-show="bouton === 1 " x-transition.scale.origin.top x-collapse > Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid earum doloribus expedita architecto eum odit quibusdam officiis soluta, maxime, fuga quia voluptatibus illo eos. Optio quae harum accusantium consequatur nesciunt!</p>
+      </section>
+      <section>
+        <button @click="bouton = 2">bouton 2</button>
+        <p x-show="bouton === 2 " x-transition.scale.origin.top x-collapse > Placeat corporis quis rem mollitia quae id iusto deserunt repellendus! Nobis autem dignissimos omnis suscipit alias illum porro, natus ipsam labore dolorem, eos, beatae impedit harum nemo ipsum! Repellendus, at?</p>
+      </section>
+      <section>
+        <button @click="bouton = 3">bouton 3</button>
+        <p x-show="bouton === 3 " x-transition.scale.origin.top x-collapse> Consequatur totam iure assumenda laboriosam illo laborum quasi recusandae mollitia aliquid excepturi reprehenderit quia possimus in error, hic reiciendis ab id consectetur maxime. Iusto sunt, amet velit nostrum consequatur mollitia.</p>
+      </section>
+    </div>
   </body>
 </html>
